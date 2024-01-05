@@ -4,17 +4,17 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 241, 241, 241;
+  --background-end-rgb: 158, 158, 158;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +24,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
+}
+
+.hr-title{
+  @apply text-primary-500 underline text-3xl font-semibold font-hr-title;
+}
+.hr-subtitle{
+  @apply text-secondary-950 font-medium text-2xl font-hr-title;
+}
+.hr-paragraph{
+  @apply text-secondary-950 text-lg font-medium   ;
+}
+.hr-paragraph .adorn{
+  @apply text-primary-500  font-hr-title ;
 }
