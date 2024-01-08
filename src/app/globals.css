@@ -24,18 +24,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    
 }
 
-.hr-title{
-  @apply text-primary-500 underline text-3xl font-semibold font-hr-title;
+.hr-title {
+  @apply text-primary-500 underline text-6xl font-semibold font-hr-title;
 }
-.hr-subtitle{
+.hr-subtitle {
   @apply text-secondary-950 font-medium text-2xl font-hr-title;
 }
-.hr-paragraph{
-  @apply text-secondary-950 text-lg font-medium   ;
+.hr-paragraph {
+  @apply text-secondary-950 text-lg;
 }
-.hr-paragraph .adorn{
-  @apply text-primary-500  font-hr-title ;
+.hr-paragraph .adorn {
+  @apply text-primary-500  font-hr-title;
 }

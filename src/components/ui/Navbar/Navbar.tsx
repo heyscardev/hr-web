@@ -5,8 +5,8 @@ import { FaAlignJustify } from "react-icons/fa6";
 import { NavbarLink } from "./NavbarLink";
 export const Navbar = () => {
   return (
-    <div className="  shadow-2xl  w-full min-h-[30px] flex justify-between px-2 py-2 bg-white items-center rounded-b-3xl fixed top-0">
-      <Link href="/">
+    <div className=" shadow-black/30   shadow-md  min-h-[30px] flex z-20 justify-between px-2 py-2 bg-neutral-100 items-center rounded-full  fixed top-3 left-5 right-5">
+      <Link href="">
         <Image
           className="h-full w-full"
           src="/imgs/logo-gradient.png"
@@ -27,7 +27,8 @@ export const Navbar = () => {
       </div>
       <nav className=" hidden lg:flex lg:justify-center items-end self-stretch mr-8">
         <ul className="flex gap-5 ">
-          <NavbarLink href="/" title="Quién Soy" />
+          <NavbarLink href="/#presentacion" title="Presentación" />
+          <NavbarLink href="/#descubre" title="Descubre" />
           <NavbarLink href="/proyectos" title="Proyectos" />
           <NavbarLink href="/meeting" title="Agendar Una Cita" />
           <NavbarLink href="/contact" title="Contactame" />
