@@ -5,7 +5,7 @@ export const Skills = () => {
   return (
     <div
       id="skills"
-      className=" lg:min-h-screen  snap-start pt-36  overflow-y-auto w-full   flex flex-col justify-center"
+      className=" lg:min-h-screen  snap-end pt-36 pb-10  overflow-y-auto w-full   flex flex-col justify-center"
     >
       <SectionTitle
         title="Productos Web Excepcionales"

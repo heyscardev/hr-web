@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply hr-gradient-background;
 }
 
 .hr-title {
@@ -37,4 +32,20 @@ body {
 }
 .hr-paragraph .adorn {
   @apply text-primary-500  font-hr-title;
+}
+
+.hr-gradient-background {
+  @apply bg-gradient-to-br from-orange-300 -z-10 via-primary-100  to-orange-300;
+}
+.hr-gradient-background-reverse {
+  @apply bg-gradient-to-tl from-orange-300 -z-10 via-primary-100  to-orange-300;
+}
+.astrounaut-image-global {
+  @apply bottom-0 w-auto  absolute -z-10    object-contain opacity-30
+  -right-[50%]   h-[100%] 
+  sm:-right-[40%] sm:h-[100%] 
+  md:-right-[35%] md:h-[100%] 
+  lg:h-[75%] lg:-right-[30%] 
+  xl:h-[75%] xl:-right-[20%]
+  2xl:h-[75%] 2xl:-right-[10%];
 }

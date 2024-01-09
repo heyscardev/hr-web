@@ -15,10 +15,10 @@ export const WhoAm = () => {
         <p className=" hr-paragraph  mt-4">
           <span className="adorn ">{"< "}</span>
           En mi universo digital, fusiono todas las tecnologías de vanguardia
-          para tejer productos de calidad excepcional. Desde el diseño elegante
+          para crear productos de calidad excepcional. Desde el diseño elegante
           hasta la funcionalidad impecable, cada línea de código es una
           expresión de mi dedicación a la perfección. Tu visión es mi impulso, y
-          juntos, creamos soluciones web que destacan.
+          juntos, creamos soluciones web que destacan en la web.
           <span className="adorn ">{" />"}</span>
         </p>
       </div>

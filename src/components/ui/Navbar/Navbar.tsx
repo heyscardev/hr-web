@@ -5,7 +5,7 @@ import { FaAlignJustify } from "react-icons/fa6";
 import { NavbarLink } from "./NavbarLink";
 export const Navbar = () => {
   return (
-    <div className=" shadow-black/30   shadow-md  min-h-[30px] flex z-20 justify-between px-2 py-2 bg-neutral-100 items-center rounded-full  fixed top-3 left-5 right-5">
+    <div className=" shadow-black/30   shadow-md  min-h-[30px] flex z-20 justify-between px-2 lg:px-10 py-2 bg-neutral-100 items-center rounded-full  fixed top-3 left-5 right-5">
       <Link href="">
         <Image
           className="h-full w-full"

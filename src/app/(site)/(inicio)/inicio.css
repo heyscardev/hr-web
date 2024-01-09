@@ -1,9 +1,15 @@
 .rocket-btn {
-  @apply bg-white rounded-full transition-all 
-  border-b-4 border-b-primary-500 border-l-4 border-l-primary-500  
-  w-[100px] md:w-[180px] lg:w-[250px]  
+  @apply backdrop-blur-md bg-transparent  rounded-full transition-all 
+  border-b-8 border-b-primary-500 border-l-4 border-l-primary-500  
+  w-[100px] md:w-[180px] lg:w-full  
   shadow-lg shadow-black
-  active:animate-wiggle  text-primary-500 animate-wiggle animate-infinite;
+   text-primary-500 
+   animate-jump-in animate-ease-in-out animate-duration-1000 delay-1000;
+}
+.rocket-btn:after {
+  @apply bg-gradient-to-tr from-primary-200  to-orange-300  absolute -top-[20%]  left-[20%] -right-[20%] bottom-[20%]  w-full h-full -z-10 rounded-full box-content
+  border-t-8 border-t-primary-500 border-l-4 border-l-primary-500 animate-jump-in animate-ease-in-out animate-duration-1000 animate-delay-1000 shadow-xl shadow-black;
+  content: "";
 }
 .rocket-btn:active {
   @apply bg-primary-500 text-white;
@@ -16,9 +22,8 @@
 }
 .rocket-btn:hover .rocket {
   filter: drop-shadow(-2px 0px 2px yellow);
-  animation: 3s linear 1s rocket-fly;
 }
-@keyframes rocket-fly {
+/* @keyframes rocket-fly {
   0% {
     transform: rotate(-90deg);
   }
@@ -37,7 +42,7 @@
   100% {
     transform: translate(0px, 0) rotate(-90deg);
   }
-}
+} */
 .astrounaut-image {
   @apply bottom-0 w-auto  absolute -z-10    object-contain opacity-30
   -right-[50%]   h-[40%] 
