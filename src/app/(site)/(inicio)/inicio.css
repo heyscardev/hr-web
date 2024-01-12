@@ -11,18 +11,7 @@
   border-t-8 border-t-primary-500 border-l-4 border-l-primary-500 animate-jump-in animate-ease-in-out animate-duration-1000 animate-delay-1000 shadow-xl shadow-black;
   content: "";
 }
-.rocket-btn:active {
-  @apply bg-primary-500 text-white;
-}
-.rocket-btn:hover {
-  @apply border-t-primary-500 duration-500;
-}
-.rocket-btn .rocket {
-  @apply -rotate-90 transition-all scale-110;
-}
-.rocket-btn:hover .rocket {
-  filter: drop-shadow(-2px 0px 2px yellow);
-}
+
 /* @keyframes rocket-fly {
   0% {
     transform: rotate(-90deg);

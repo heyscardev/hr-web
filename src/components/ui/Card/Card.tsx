@@ -27,7 +27,7 @@ export const Card = ({
           </Link>
         )}
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1 "></div>
       {image && (
         <Image
           src={image.src}
@@ -35,8 +35,7 @@ export const Card = ({
           unoptimized
           width={600}
           height={600}
-          className="w-2/3 ml-auto -mb-12"
-          loading="lazy"
+          className="w-2/3 ml-auto -mb-12 flex-1"
         />
       )}
     </article>

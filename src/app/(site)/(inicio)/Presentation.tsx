@@ -50,6 +50,7 @@ export const Presentation = () => {
                 width={400}
                 height={400}
                 className=" object-cover aspect-square object-top "
+                loading="eager"
               />
             </div>
           </button>

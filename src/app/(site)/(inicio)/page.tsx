@@ -6,6 +6,8 @@ import { WhoAm } from "./WhoAm";
 import "./inicio.css";
 import { Skills } from "./Skills";
 import { Tecnologies } from "./Tecnologies";
+import { LanguagesPlanet } from "@/modules/LanguagesPlanets";
+import { SectionTitle } from "@/components";
 
 export default function IndexPage() {
   return (
@@ -23,12 +25,20 @@ export default function IndexPage() {
           className="astrounaut-image animate-wiggle lg:animate-bounce animate-infinite animate-duration-[15000ms] lg:animate-duration-[20000ms]  animate-ease-in-out"
           src="/imgs/astronaut-background.png"
           alt="astounaut"
-          width={100}
-          height={100}
-          unoptimized
+          width={400}
+          height={800}
+          loading="eager"
         />
         <WhoAm />
         <Skills />
+      </div>
+      <div className="hr-gradient-background-reverse min-h-screen flex flex-col justify-center">
+        <SectionTitle
+          className="text-center mb-10"
+          title="Mi Universo de Tecnologías"
+          subtile="todos los planetas de programación que domino"
+        />
+        <LanguagesPlanet />
       </div>
 
       <Tecnologies />

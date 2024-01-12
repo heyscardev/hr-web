@@ -1,11 +1,24 @@
+"use client";
 import { titleFont } from "@/config/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAlignJustify } from "react-icons/fa6";
 import { NavbarLink } from "./NavbarLink";
+import { useState } from "react";
+import clsx from "clsx";
 export const Navbar = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const onClick = () => {
+    setOpen(!open);
+  };
   return (
-    <div className=" shadow-black/30   shadow-md  min-h-[30px] flex z-20 justify-between px-2 lg:px-10 py-2 bg-neutral-100 items-center rounded-full  fixed top-3 left-5 right-5">
+    <div
+      onClick={onClick}
+      className={clsx(
+        " duration-1000  transition-all shadow-black/30   shadow-md  flex z-20 justify-between px-2 lg:px-10 py-2 bg-neutral-100 items-center   fixed top-3 left-5 right-5",
+        { "h-20 rounded-full": !open, "h-full rounded-none": open }
+      )}
+    >
       <Link href="">
         <Image
           className="h-full w-full"
