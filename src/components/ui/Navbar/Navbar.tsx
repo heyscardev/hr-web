@@ -13,7 +13,7 @@ export const Navbar = () => {
   };
   return (
     <div
-      onClick={onClick}
+      // onClick={onClick}
       className={clsx(
         " duration-1000  transition-all shadow-black/30   shadow-md  flex z-20 justify-between px-2 lg:px-10 py-2 bg-neutral-100 items-center   fixed top-3 left-5 right-5",
         { "h-20 rounded-full": !open, "h-full rounded-none": open }
@@ -40,9 +40,10 @@ export const Navbar = () => {
       </div>
       <nav className=" hidden lg:flex lg:justify-center items-end self-stretch mr-8">
         <ul className="flex gap-5 ">
-          <NavbarLink href="/#presentacion" title="Presentación" />
-          <NavbarLink href="/#descubre" title="Descubre" />
-          <NavbarLink href="/proyectos" title="Proyectos" />
+          <NavbarLink href="/#presentacion" title="Inicio" />
+          <NavbarLink href="/#descubre" title="Quien Soy" />
+          <NavbarLink href="/#skills" title="Yo desarrollo" />
+          <NavbarLink href="/#tecnologias" title="Tecnologías" />
           <NavbarLink href="/meeting" title="Agendar Una Cita" />
           <NavbarLink href="/contact" title="Contactame" />
         </ul>

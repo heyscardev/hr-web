@@ -26,9 +26,9 @@ export const Tecnologies = () => {
           title="Arquitectura Digital Sofisticada"
           content="Desde el núcleo hasta la interfaz, nuestra arquitectura digital es una sinfonía de habilidades de programación. Cada línea de código es una obra de arte funcional."
         />
-        <div className=" flex justify-center object-contain object-center items-center col-span-3 md:col-span-4 md:col-start-2 xl:col-span-6  xl:col-start-4 xl:row-start-1 xl:row-span-3">
+        <div className=" flex justify-center object-contain object-center items-center col-span-3 md:col-span-3 md:row-span-2 md:col-start-1 xl:col-span-4  xl:col-start-5 xl:row-start-1 xl:row-span-3">
           <Image
-            className="w-full  h-full"
+            className="w-full  h-full "
             src="/imgs/hr-planet-background.png"
             alt="planet-hr"
             width={600}
@@ -43,7 +43,7 @@ export const Tecnologies = () => {
         />
         <PlanetSkills
           primary
-          className=" col-span-3 xl:row-start-3"
+          className=" col-span-3 md:col-start-4 xl:col-start-1 xl:row-start-3"
           title="Codificación Responsiva"
           content="La esencia de la programación responsiva se refleja en cada detalle de nuestras soluciones web. Descubre la magia de la adaptabilidad en cada línea de código."
         />

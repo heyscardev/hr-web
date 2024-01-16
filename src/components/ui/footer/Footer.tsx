@@ -112,7 +112,8 @@ export const Footer = () => {
               </li>
               <li className="mt-3">
                 <Link
-                  href="/privacy"
+                  href="/cv.pdf"
+                  target="_blank"
                   className="text-gray-500 cursor-pointer hover:text-gray-900"
                 >
                   Curriculum
@@ -128,7 +129,7 @@ export const Footer = () => {
               <li className="mt-3">
                 <a
                   className="text-gray-500 cursor-pointer hover:text-gray-900"
-                  href="tel:+34678567876"
+                  href="tel:+5491140372927"
                   target="_blank"
                 >
                   +54 11-4037-2927

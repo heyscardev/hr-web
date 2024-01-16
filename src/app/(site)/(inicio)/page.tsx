@@ -32,7 +32,7 @@ export default function IndexPage() {
         <WhoAm />
         <Skills />
       </div>
-      <div className="hr-gradient-background-reverse min-h-screen flex flex-col justify-center">
+      <div className="hr-gradient-background-reverse pt-32 flex flex-col items-center min-h-screen pb-2" id="tecnologias">
         <SectionTitle
           className="text-center mb-10"
           title="Mi Universo de Tecnologías"
@@ -41,7 +41,7 @@ export default function IndexPage() {
         <LanguagesPlanet />
       </div>
 
-      <Tecnologies />
+      {/* <Tecnologies /> */}
     </div>
   );
 }
