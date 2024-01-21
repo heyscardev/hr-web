@@ -1,4 +1,6 @@
 import { Footer, Navbar } from "@/components";
+import clsx from "clsx";
+import { ScrollLayout } from "./ScrollLayout";
 
 export default function RootLayout({
   children,
@@ -6,10 +8,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen flex flex-col max-h-screen overflow-x-hidden  scroll-smooth">
+    <ScrollLayout>
       <Navbar />
       <main className=" flex-1 flex flex-col   ">{children}</main>
-      <Footer />
-    </div>
+      <Footer />{" "}
+    </ScrollLayout>
   );
 }

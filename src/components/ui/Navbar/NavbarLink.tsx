@@ -6,14 +6,16 @@ interface Props {
   href: string;
   title?: string;
   icon?: React.ReactNode;
+  active?: boolean;
+  scroll?: boolean;
 }
-export const NavbarLink = ({ icon, title, href }: Props) => {
+export const NavbarLink = ({ icon, title, active = false, ...link }: Props) => {
   const pathname = usePathname();
-  const isCurrent = pathname === href;
+  const isCurrent = active || pathname === link.href;
   return (
     <li>
       <Link
-        href={href}
+        {...link}
         className={clsx(
           " underline underline-offset-4 hover:text-primary-500 text-sm transition-all font-semibold",
           {

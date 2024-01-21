@@ -19,7 +19,7 @@ export const Navbar = () => {
         { "h-20 rounded-full": !open, "h-full rounded-none": open }
       )}
     >
-      <Link href="">
+      <Link href="/">
         <Image
           className="h-full w-full"
           src="/imgs/logo-gradient.png"
@@ -40,12 +40,11 @@ export const Navbar = () => {
       </div>
       <nav className=" hidden lg:flex lg:justify-center items-end self-stretch mr-8">
         <ul className="flex gap-5 ">
-          <NavbarLink href="/#presentacion" title="Inicio" />
+          <NavbarLink href="/" title="Inicio" />
           <NavbarLink href="/#descubre" title="Quien Soy" />
           <NavbarLink href="/#skills" title="Yo desarrollo" />
           <NavbarLink href="/#tecnologias" title="Tecnologías" />
-          <NavbarLink href="/meeting" title="Agendar Una Cita" />
-          <NavbarLink href="/contact" title="Contactame" />
+          <NavbarLink href="/contacto" title="Contactame" scroll={true} />
         </ul>
       </nav>
       <button className="lg:hidden">
