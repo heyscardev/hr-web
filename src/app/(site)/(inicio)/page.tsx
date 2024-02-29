@@ -13,7 +13,7 @@ export default function IndexPage() {
   return (
     <div className="z-10">
       <Presentation />
-      <div className=" relative bg-gradient-to-br from-orange-300 -z-10 via-primary-100  to-orange-300 overflow-hidden">
+      <div className=" relative bg-gradient-to-br from-orange-200 -z-10 via-primary-100  to-orange-300 overflow-hidden">
         <Image
           className=" top-[10%] sm:top-[5%] xl:top-[30%]  w-full lg:w-auto  absolute -z-10  h-[50%] object-cover opacity-30  "
           src="/imgs/luna-background.png"

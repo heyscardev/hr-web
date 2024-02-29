@@ -104,7 +104,7 @@ export const Footer = () => {
             <nav className="mb-10 list-none">
               <li className="mt-3">
                 <Link
-                  href="/privacy"
+                  href="/privacidad"
                   className="text-gray-500 cursor-pointer hover:text-gray-900"
                 >
                   Terminos y Privacidad
