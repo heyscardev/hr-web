@@ -11,7 +11,7 @@ import type {
   LanguageNode,
 } from "@/modules/interfaces/languages-interface";
 
-THREE.Cache.enabled= true
+THREE.Cache.enabled = true;
 
 interface Props {
   animationTime?: number;
@@ -82,7 +82,7 @@ export const Graph = ({ animationTime = 2000, heightPercent = 50 }: Props) => {
     <ForceGraph
       showNavInfo={true}
       width={displayWidth - 20}
-      linkWidth={.5}
+      linkWidth={0.5}
       ref={fgRef}
       height={Math.max(500, (displayHeight / 100) * heightPercent)}
       nodeLabel={(property) =>
