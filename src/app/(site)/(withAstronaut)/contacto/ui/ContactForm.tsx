@@ -1,14 +1,10 @@
 "use client";
 import { TextArea, TextField } from "@/components";
 import { sendEmailToContact } from "@/emails";
+import { Message } from "@/interfaces";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { GrSend } from "react-icons/gr";
-interface Fields {
-  name: string;
-  email: string;
-  phone?: string;
-  message: string;
-}
+
 interface Props {}
 export const ContactForm = ({}: Props) => {
   const {
@@ -16,9 +12,11 @@ export const ContactForm = ({}: Props) => {
     handleSubmit,
     reset,
     formState: { errors, isValid, isSubmitted },
-  } = useForm<Fields>({ mode: "onTouched" });
+  } = useForm<Message>({ mode: "onTouched" });
 
-  const onSubmit: SubmitHandler<Fields> = async ({}) => {};
+  const onSubmit: SubmitHandler<Message> = async (data) => {
+    const res = await sendEmailToContact(data);
+  };
 
   return (
     <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
