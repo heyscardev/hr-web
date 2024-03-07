@@ -4,21 +4,25 @@ export const WhoAm = () => {
   return (
     <div
       id="descubre"
-      className=" overflow-y-auto w-full    flex flex-col pt-32 lg:flex-row  snap-start px-5  md:px-[5%] lg:flex-wrap items-center sm:justify-around"
+      className=" overflow-y-auto w-full    flex flex-col pt-16 md:pt-32 lg:flex-row  snap-start px-5  md:px-[5%] lg:flex-wrap items-center sm:justify-around"
     >
       <div className="  lg:w-5/12 xl:w-6/12 z-10">
         <h1 className={`hr-title `}>Heyscar Romero</h1>
 
         <h2 className="hr-subtitle animate-fade-down animate-delay-300">
-          Arquitecto Digital de Experiencias Únicas
+          Transformando tu Visión en Realidad
         </h2>
         <p className=" hr-paragraph  mt-4">
           <span className="adorn ">{"< "}</span>
-          En mi universo digital, fusiono todas las tecnologías de vanguardia
-          para crear productos de calidad excepcional. Desde el diseño elegante
-          hasta la funcionalidad impecable, cada línea de código es una
-          expresión de mi dedicación a la perfección. Tu visión es mi impulso, y
-          juntos, creamos soluciones web que destacan en la web.
+          Te ofrecemos servicios integrales de desarrollo de aplicaciones web y
+          sistemas, así como soluciones empresariales a medida. Me por mi
+          creatividad y dedicación para llevar tus ideas a la realidad digital.
+          Desde el diseño de páginas web elegantes hasta la implementación de
+          sistemas complejos, nos enorgullece fusionar tecnología de vanguardia
+          con un enfoque centrado en el usuario. Nuestro objetivo es impulsar tu
+          negocio hacia el éxito en línea, brindándote herramientas digitales
+          innovadoras que te ayuden a destacar en el mercado. ¿Tienes una visión
+          única? ¡Déjanos convertirla en una realidad digital excepcional!
           <span className="adorn ">{" />"}</span>
         </p>
       </div>

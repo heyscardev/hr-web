@@ -30,11 +30,11 @@ export const MoveButton = ({ text, href, className }: Props) => {
         onMouseUp={onMouseUp}
         onMouseLeave={onMouseLeave}
         className={clsx(
-          `transition-all animate-wiggle hover:animate-none duration-500 
+          `transition-all lg:animate-wiggle hover:animate-none duration-500  
         bg-gradient-to-t group  from-primary-950 my-4 shadow-lg to-yellow-500 flex 
          p-4 rounded-lg font-hr-title font-medium text-white hover:shadow-2xl`,
           {
-            "text-3xl": !className,
+            "text-xl sm:text-3xl": !className,
           },
           [className]
         )}

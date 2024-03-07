@@ -39,7 +39,7 @@ export default function IndexPage() {
         <SectionTitle
           className="text-center mb-10"
           title="Mi Universo de Tecnologías"
-          subtile="todos los planetas de programación que domino"
+          subtile="Explora Nuestro Universo de Desarrollo Digital"
         />
         <LanguagesPlanet />
       </div>

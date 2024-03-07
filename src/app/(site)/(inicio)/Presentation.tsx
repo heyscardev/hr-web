@@ -6,7 +6,7 @@ export const Presentation = () => {
   return (
     <section
       id="presentacion"
-      className=" flex flex-col md:flex-row min-h-screen items-center justify-evenly pt-20 overflow-hidden  relative snap-top sm:px-5  md:px-[5%]"
+      className=" flex flex-col md:flex-row min-h-screen items-center justify-evenly pt-16 sm:pt-20 overflow-hidden  relative snap-top sm:px-5  md:px-[5%]"
       style={{
         backgroundImage: "url('/imgs/background3.jpeg')",
         backgroundRepeat: "no-repeat",

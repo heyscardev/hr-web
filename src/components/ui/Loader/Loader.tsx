@@ -9,6 +9,7 @@ export const Loader = () => {
           src="/imgs/logo-gradient.png"
           width={100}
           height={100}
+          priority
           alt="logo heyscar romero"
         />
       </div>

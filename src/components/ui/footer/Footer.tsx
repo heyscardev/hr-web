@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGoogle, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { SiGooglemaps } from "react-icons/si";
+import { CopyrightText } from "../CopyrightText";
+import { SocialButtons } from "../ContacButtons/SocialButtons";
 
 export const Footer = () => {
-  const year = new Date().getFullYear();
   return (
     <footer className=" snap-end  w-full text-gray-700 bg-gray-100 body-font">
       <div className="container flex flex-col md:justify-center flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
@@ -23,26 +24,7 @@ export const Footer = () => {
           </p>
           <div className="mt-4">
             <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0  w-full">
-              <a
-                className="text-gray-500 cursor-pointer hover:text-gray-700 mr-2"
-                href="https://wa.me/5491140372927?text=Hola "
-              >
-                <FaWhatsapp size={20} />
-              </a>
-              <a
-                className="text-gray-500 cursor-pointer hover:text-gray-700 mr-2"
-                href="https://www.linkedin.com/in/heyscar/"
-                target="_blank"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                className="text-gray-500 cursor-pointer hover:text-gray-700 mr-2"
-                href="mailto:heyscar.dev@gmail.com"
-                target="_blank"
-              >
-                <FaGoogle size={20} />
-              </a>
+              <SocialButtons size={20} />
             </span>
           </div>
         </div>
@@ -151,7 +133,7 @@ export const Footer = () => {
       <div className="bg-primary-700">
         <div className="container px-5 py-4 mx-auto">
           <p className="text-sm text-neutral-200 capitalize xl:text-center">
-            Heyscar Romero © {year} Todos los derechos reservados
+            <CopyrightText />
           </p>
         </div>
       </div>

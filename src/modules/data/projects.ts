@@ -5,7 +5,7 @@ const md = 1;
 const sm = 0.7;
 const xs = 0.5;
 
-export const languages: Language[] = [
+export const projects: Language[] = [
   {
     id: 1,
     name: "JS",

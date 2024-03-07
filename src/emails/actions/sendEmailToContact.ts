@@ -5,17 +5,18 @@ import { ClientEmailTemplate } from "../components/ClientMailTemplate";
 import { Message } from "@/interfaces";
 
 export const sendEmailToContact = async (message: Message) => {
+  const emailFrom = "heyscar.dev@resend.dev";
   const resend = new Resend(process.env.NEXT_RESEND_API_KEY);
   const { data, error } = await resend.emails.send({
-    from: "heyscar.dev@resend.dev",
-    to: ["heyscarromero@gmail.com", message.email],
+    from: emailFrom,
+    to: [message.email],
     subject: "Gracias Por Contactarme",
-    react: ClientEmailTemplate(message),
+    react: ClientEmailTemplate({ ...message, emailFrom }),
   });
 
   if (error) {
-    return error;
+    return { ok: false, error };
   }
 
-  return data;
+  return { ok: true, data };
 };

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter, titleFont } from "@/config/fonts";
+import toast, { ToastBar, Toaster } from "react-hot-toast";
+import { ToastPlugin } from "./plugins/ToastPlugin";
 
 export const metadata: Metadata = {
   title: "Heyscar Romero | Desarrollador Web",
@@ -97,6 +99,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${titleFont.variable} `}>
+        <ToastPlugin />
+
         {children}
       </body>
     </html>

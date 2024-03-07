@@ -1,9 +1,18 @@
 "use client";
-import { TextArea, TextField } from "@/components";
+import {
+  Loader,
+  LoaderToButtons,
+  SocialButtons,
+  TextArea,
+  TextField,
+} from "@/components";
 import { sendEmailToContact } from "@/emails";
 import { Message } from "@/interfaces";
+import clsx from "clsx";
 import { SubmitHandler, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { GrSend } from "react-icons/gr";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 interface Props {}
 export const ContactForm = ({}: Props) => {
@@ -11,16 +20,33 @@ export const ContactForm = ({}: Props) => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isValid, isSubmitted },
+    formState: { errors, isValid, isSubmitted, isSubmitting },
   } = useForm<Message>({ mode: "onTouched" });
 
   const onSubmit: SubmitHandler<Message> = async (data) => {
     const res = await sendEmailToContact(data);
+    if (!res.ok) {
+      toast.error(
+        res.error?.message ?? "Ha ocurrido un error! intente nuevamente"
+      );
+      return false;
+    }
+    toast.success(
+      "se ha enviado exitosamente su mensaje nospondremos en contacto lo antes posible!"
+    );
+    return true;
   };
 
   return (
     <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
       <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="flex justify-around  my-3 ">
+          <SocialButtons
+            size={30}
+            iconClassName="text-primary-200 hover:text-primary-500"
+          />
+        </div>
+
         <TextField
           register={register}
           name="name"
@@ -60,23 +86,35 @@ export const ContactForm = ({}: Props) => {
         <div>
           <button
             type="submit"
-            disabled={!isValid}
-            className="
-            mt-6
+            disabled={!isValid || isSubmitting}
+            className={clsx(
+              `  mt-6
                         w-full
                         items-center
                         text-white
                         flex justify-center gap-2
-                        bg-primary-300
+                        bg-primary-200
+                        hover:bg-primary-400
+                        hover:shadow
                         rounded
-                        border border-primary-800
-                        p-3
-                        transition
+                        border border-primary-700
+                        px-3
+                        py-1
+                        min-h-10
+                        transition-all
+                        duration-300
                         hover:bg-opacity-90
-                        disabled:opacity-50
-                        "
+                     
+                        `,
+              {
+                "disabled:bg-primary-100 disabled:border-primary-100":
+                  isSubmitting,
+                "disabled:bg-slate-400 disabled:border-slate-300":
+                  !isSubmitting,
+              }
+            )}
           >
-            <GrSend />
+            {isSubmitting ? <LoaderToButtons /> : <GrSend className="" />}
           </button>
         </div>
       </form>
