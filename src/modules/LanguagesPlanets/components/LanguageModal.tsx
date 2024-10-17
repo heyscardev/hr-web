@@ -7,7 +7,6 @@ import { MdQueryBuilder, MdScreenshotMonitor } from "react-icons/md";
 import { LuServerCog, LuWallpaper } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa";
 import Image from "next/image";
-import { ProjectCard } from "@/modules/projects";
 import { SkillChip } from "./SkillChip";
 import clsx from "clsx";
 
