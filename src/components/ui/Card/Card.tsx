@@ -33,11 +33,11 @@ export const Card = ({
         ) : (
           <div className="mb-6">{Content}</div>
         )}
-        {linkHref && (
+        {/* {linkHref && (
           <Link href={linkHref} className="block font-medium text-primary-300">
             {linkTitle}
           </Link>
-        )}
+        )} */}
       </div>
       <div className="flex-1 "></div>
       {image && (

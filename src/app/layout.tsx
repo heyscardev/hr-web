@@ -3,6 +3,8 @@ import "./globals.css";
 import { inter, titleFont } from "@/config/fonts";
 import toast, { ToastBar, Toaster } from "react-hot-toast";
 import { ToastPlugin } from "./plugins/ToastPlugin";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "@/config";
 
 export const metadata: Metadata = {
   title: "Heyscar Romero | Desarrollador Web",
@@ -100,8 +102,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${titleFont.variable} `}>
         <ToastPlugin />
-
-        {children}
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
       </body>
     </html>
   );

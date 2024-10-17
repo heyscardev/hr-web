@@ -9,11 +9,12 @@ export const Skills = () => {
       <SectionTitle
         title="Productos Web Excepcionales"
         subtile="Servicios Digitales a Medida"
-        className="my-10 text-center"
+        className="my-10 text-center z-10"
       />
       <div className="lg:container  m-auto px-6 text-gray-500 md:px-12 xl:px-0 py-5">
-        <div className="mx-auto grid gap-6 w-3/4 grid-cols-1 md:grid-cols-2 xl:w-11/12 xl:grid-cols-3">
+        <div className="mx-auto grid gap-6 w-3/4 grid-cols-1 md:grid-cols-2 xl:w-11/12 xl:grid-cols-3 ">
           <Card
+            className="z-10"
             title="Desarrrollo de Apps Enfocados en un Modelo de Negocio"
             Content={
               <ul className="mx-5">
@@ -38,6 +39,7 @@ export const Skills = () => {
           />
 
           <Card
+            className="z-10"
             title="Diseño y Desarrollo de Páginas Web Elegantes"
             Content={
               <ul className="mx-5">
@@ -63,7 +65,7 @@ export const Skills = () => {
             }}
           />
           <Card
-            className="md:col-span-2 xl:col-span-1"
+            className="md:col-span-2 xl:col-span-1 z-10"
             title="Desarrollo de Aplicaciones Empresariales Multiplataforma"
             Content={
               <ul className="mx-5">

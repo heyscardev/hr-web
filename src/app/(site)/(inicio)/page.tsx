@@ -8,6 +8,7 @@ import { Skills } from "./Skills";
 import { Tecnologies } from "./Tecnologies";
 import { LanguagesPlanet } from "@/modules/LanguagesPlanets";
 import { SectionTitle } from "@/components";
+import { MyUniverse } from "./MyUniverse";
 
 export default function IndexPage() {
   return (
@@ -32,18 +33,7 @@ export default function IndexPage() {
         <WhoAm />
         <Skills />
       </div>
-      <div
-        className="hr-gradient-background-reverse pt-32 flex flex-col items-center min-h-screen pb-2"
-        id="tecnologias"
-      >
-        <SectionTitle
-          className="text-center mb-10"
-          title="Mi Universo de Tecnologías"
-          subtile="Explora Nuestro Universo de Desarrollo Digital"
-        />
-        <LanguagesPlanet />
-      </div>
-
+      <MyUniverse />
       {/* <Tecnologies /> */}
     </div>
   );

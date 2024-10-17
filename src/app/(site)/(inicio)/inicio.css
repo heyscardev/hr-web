@@ -33,7 +33,7 @@
   }
 } */
 .astrounaut-image {
-  @apply bottom-0 w-auto  absolute -z-10    object-contain opacity-30
+  @apply bottom-0 w-auto  absolute    object-contain opacity-30
   -right-[50%]   h-[40%] 
   sm:-right-[40%] sm:h-[40%] 
   md:-right-[35%] md:h-[40%] md:bottom-[10%] 

@@ -13,6 +13,7 @@ const config: Config = {
       fontFamily: {
         "hr-title": ["var(--font-hr-title)"],
       },
+
       colors: {
         primary: {
           100: "#FEA5B2",
@@ -43,6 +44,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient--circle-horizontal":
+          "radial-gradient(circle at right, transparent 49.9%, #ffffff 50%)",
+        "gradient--circle-vertical":
+          "radial-gradient(circle at top, transparent 199px, #ffffff 200px)",
       },
     },
   },

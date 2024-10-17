@@ -48,7 +48,14 @@ export const ClientEmailTemplate = ({
           <span className="font-semibold ">Heyscar.vercel.app</span>.
         </p>
 
-        <button className="px-6 py-2 mt-4 text-sm font-medium tracking-wider text-white capitalize  transform bg-primary-500 rounded">
+        <button 
+        style={{
+          padding: "8px 24px",
+        color: "#fff",
+        backgroundColor: "#fdba74",
+        }}
+        
+        className=" px-6 py-2 mt-4 text-sm font-medium tracking-wider text-white capitalize  border-none transform bg-primary-500 rounded-lg">
           Ir al sitio
         </button>
       </main>
