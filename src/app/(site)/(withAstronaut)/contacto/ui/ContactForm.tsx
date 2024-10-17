@@ -9,7 +9,7 @@ import {
 import { sendEmailToContact } from "@/emails";
 import { Message } from "@/interfaces";
 import clsx from "clsx";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { set, SubmitHandler, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { GrSend } from "react-icons/gr";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
@@ -20,6 +20,7 @@ export const ContactForm = ({}: Props) => {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors, isValid, isSubmitted, isSubmitting },
   } = useForm<Message>({ mode: "onTouched" });
 
@@ -31,6 +32,7 @@ export const ContactForm = ({}: Props) => {
       );
       return false;
     }
+    setValue("message", "");
     toast.success(
       "se ha enviado exitosamente su mensaje nospondremos en contacto lo antes posible!"
     );
