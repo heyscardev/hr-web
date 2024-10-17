@@ -34,7 +34,7 @@ export const ContactForm = ({}: Props) => {
     }
     setValue("message", "");
     toast.success(
-      "se ha enviado exitosamente su mensaje nospondremos en contacto lo antes posible!"
+      "se ha enviado exitosamente su mensaje nos pondremos en contacto lo antes posible!"
     );
     return true;
   };
