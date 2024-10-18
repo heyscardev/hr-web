@@ -47,7 +47,7 @@ export const Card = ({
           unoptimized
           width={600}
           height={600}
-          className="w-2/3 ml-auto -mb-12 flex-1"
+          className="w-2/3 ml-auto -mb-12 max-h-40 flex-1"
         />
       )}
     </article>

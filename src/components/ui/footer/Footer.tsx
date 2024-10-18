@@ -15,7 +15,7 @@ export const Footer = () => {
               src="/imgs/logo-gradient.png"
               width={100}
               height={50}
-              className="h-full filte w-auto"
+              className=" "
               alt="heyscar romero logo"
             />
           </a>

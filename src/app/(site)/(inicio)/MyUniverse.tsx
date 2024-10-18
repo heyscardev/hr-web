@@ -12,7 +12,7 @@ export const MyUniverse = ({}: Props) => {
     <div
       ref={containerRef}
       className="hr-gradient-background-reverse pt-32 flex flex-col items-center min-h-screen pb-2"
-      id="tecnologias"
+      
     >
       <SectionTitle
         className="text-center mb-10"

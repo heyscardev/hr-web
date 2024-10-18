@@ -43,13 +43,15 @@ export const Presentation = () => {
       <div className="my-4 md:flex-1 flex justify-center z-10">
         <Link href="#descubre" className=" ">
           <button className="rocket-btn  ">
-            <div className="overflow-hidden rounded-full">
+            <div className="overflow-hidden rounded-full bg-gray-300/80 
+            ">
               <Image
                 alt="heysca romero profile"
-                src="/imgs/me.jpeg"
+                src="/imgs/me.png"
                 width={400}
                 height={400}
-                className=" object-cover aspect-square object-top "
+                className=" object-cover aspect-square object-top scale-110  "
+              style={{ filter: "drop-shadow(0 0 10px rgba(255,255,255,0.2))" }}
                 loading="eager"
               />
             </div>

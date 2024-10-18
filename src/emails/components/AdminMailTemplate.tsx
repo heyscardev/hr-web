@@ -56,7 +56,7 @@ export const AdminEmailTemplate = ({
 
         <p className="mt-4 text-gray-600 dark:text-gray-300">
           <Link href={`mailto:${email}`} className="text-primary-500">
-            Responder a {name}
+            Responder a {email}
           </Link>
         </p>
       </main>
