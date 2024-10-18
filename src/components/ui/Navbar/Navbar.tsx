@@ -46,7 +46,7 @@ export const Navbar = () => {
       >
         <Link href="/">
           <Image
-            className="h-full w-full"
+         
             src="/imgs/logo-gradient.png"
             alt="heyscar romero logo"
             width={40}
