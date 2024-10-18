@@ -9,6 +9,7 @@ import { FaPlus } from "react-icons/fa";
 import Image from "next/image";
 import { SkillChip } from "./SkillChip";
 import clsx from "clsx";
+import { FaX } from "react-icons/fa6";
 
 interface Props {
   onClose?: () => void;
@@ -40,13 +41,22 @@ export const LanguageModal = ({ onClose }: Props) => {
       <div
         className="   flex-1 min-h-[100%] h-full
         flex flex-col-reverse justify-end
-        md:grid md:grid-cols-2 md:grid-rows-1 m-0 gap-4 md:bg-gradient--circle-horizontal bg-gradient--circle-vertical "
+        md:grid md:grid-cols-2 md:grid-rows-1 m-0 gap-4 md:bg-gradient--circle-horizontal bg-gradient--circle-vertical 
+   
+        "
+
         // style={{
         //   background:
         //     "radial-gradient(circle at right, transparent 50%, #ffffff 50%)",
         //   //"radial-gradient(circle at 90% 50%, transparent 45%, #ffffff 45%)",
         // }}
       >
+        <button
+          onClick={onClose}
+          className="absolute top-2         right-2 p-2 rounded-lg hover:shadow-lg"
+        >
+          <FaX size={20} />
+        </button>
         <div className="px-2 pb-2 md:p-4 flex flex-col  ">
           <div className="flex items-center mb-2">
             {selectedPlanet && (
@@ -90,7 +100,6 @@ export const LanguageModal = ({ onClose }: Props) => {
               Proyectos
             </span>
 
-       
             <span className="text-gray-400 text-center text-wrap max-w-80">
               Estamos Trabando en esta parte del sitio para brindarte una mejor
               experiencia.

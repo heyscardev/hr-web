@@ -16,6 +16,7 @@ const routes: Route[] = [
   { href: "/#descubre", title: "Quien Soy" },
   { href: "/#skills", title: "Yo desarrollo" },
   { href: "/#tecnologias", title: "Tecnologías" },
+  { href: "/mi-universo", title: "Mi Universo"},
   { href: "/contacto", title: "Contactame", scroll: true },
 ];
 export const Navbar = () => {
@@ -92,7 +93,7 @@ export const Navbar = () => {
         className={clsx(
           "lg:hidden  transition-all duration-1000 flex overflow-hidden lg:justify-center  items-center self-stretch   ",
           {
-            "h-[240px] my-16": open,
+            "h-[280px] my-14": open,
             "h-[0px] ": !open,
           }
         )}

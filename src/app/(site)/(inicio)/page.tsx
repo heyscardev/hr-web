@@ -33,8 +33,8 @@ export default function IndexPage() {
         <WhoAm />
         <Skills />
       </div>
-      <MyUniverse />
-      {/* <Tecnologies /> */}
+      {/* <MyUniverse /> */}
+      <Tecnologies />
     </div>
   );
 }

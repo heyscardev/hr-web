@@ -11,8 +11,8 @@ export const Skills = () => {
         subtile="Servicios Digitales a Medida"
         className="my-10 text-center z-10"
       />
-      <div className="lg:container  m-auto px-6 text-gray-500 md:px-12 xl:px-0 py-5">
-        <div className="mx-auto grid gap-6 w-3/4 grid-cols-1 md:grid-cols-2 xl:w-11/12 xl:grid-cols-3 ">
+      <div className="lg:container  m-auto px-6 text-gray-500 lg:px-12 xl:px-0 py-5">
+        <div className="mx-auto grid gap-6  grid-cols-1 md:grid-cols-2 xl:w-11/12 xl:grid-cols-3 ">
           <Card
             className="z-10"
             title="Desarrrollo de Apps Enfocados en un Modelo de Negocio"
