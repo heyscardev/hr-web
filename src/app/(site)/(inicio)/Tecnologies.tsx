@@ -29,7 +29,7 @@ export const Tecnologies = () => {
         />
         <Link
           href="/mi-universo"
-          className=" ¿relative  animate-duration-[10s]  md:animate-bounce hover:animate-stop hover:opacity-80 active:opacity-100 saturate-150 transition-all duration-500  flex justify-center object-contain object-center items-center col-span-3 md:col-span-3 md:row-span-2 md:col-start-1 xl:col-span-4  xl:col-start-5 xl:row-start-1 xl:row-span-3"
+          className="relative  animate-duration-[10s]  md:animate-bounce hover:animate-stop hover:opacity-80 active:opacity-100 saturate-150 transition-all duration-500  flex justify-center object-contain object-center items-center col-span-3 md:col-span-3 md:row-span-2 md:col-start-1 xl:col-span-4  xl:col-start-5 xl:row-start-1 xl:row-span-3"
         >
           <div
           className={clsx(
