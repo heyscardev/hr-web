@@ -91,6 +91,22 @@ export const metadata: Metadata = {
     "GitHub",
     "Bitbucket",
   ],
+  openGraph: {
+    type: 'website',
+    url: 'https://tusitio.com', // URL de tu sitio web
+    title: 'Heyscar Romero | Desarrollador Web',
+    description: 'Desarrollador web de páginas y aplicaciones web empresariales...',
+    images: [
+      {
+        url: '/imgs/logo-gradient.png', 
+        width: 1200,
+        height: 630,
+        alt: 'Heyscar Romero - Desarrollador Web',
+      },
+    ],
+    locale: 'es_ES', // Idioma en que se presenta la página
+    siteName: 'Heyscar Romero',
+  },
 };
 
 export default function RootLayout({
@@ -100,6 +116,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+        <head>
+        {/* Meta tags de Open Graph */}
+        <link rel="icon" href="/favicon.ico" /> {/* Favicon */}
+        <title>Heyscar Romero | Desarrollador Web</title>
+      </head>
       <body className={`${inter.className} ${titleFont.variable} `}>
         <ToastPlugin />
         <ThemeProvider theme={theme}>{children}</ThemeProvider>
