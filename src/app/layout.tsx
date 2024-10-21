@@ -118,7 +118,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://heyscar.dev/imgs/preview-page.png"
+          content="https://heyscar.dev/imgs/og.jpeg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="heyscar.dev" />
@@ -133,7 +133,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://heyscar.dev/imgs/preview-page"
+          content="https://heyscar.dev/imgs/og.jpeg"
         />
         {/* Meta tags de Open Graph */}
         <link rel="icon" href="/favicon.ico" /> {/* Favicon */}
