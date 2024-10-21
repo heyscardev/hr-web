@@ -22,7 +22,7 @@ export default function ContactPage() {
               <div className="max-w-[570px] mb-12 lg:mb-0 text-center lg:text-start f">
                 <SectionTitle
                   className="mb-4"
-                  title="Contactamé"
+                  title="Contacta conmigo"
                   subtile="Conéctate con Heyscar Romero"
                 />
                 <p className=" text-base text-body-color text-secondary-950 leading-relaxed mb-1">
