@@ -118,7 +118,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://heyscar.dev/imgs/preview-page"
+          content="https://heyscar.dev/imgs/preview-page.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="heyscar.dev" />
