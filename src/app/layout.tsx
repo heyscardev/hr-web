@@ -91,22 +91,6 @@ export const metadata: Metadata = {
     "GitHub",
     "Bitbucket",
   ],
-  openGraph: {
-    type: 'website',
-    url: 'https://tusitio.com', // URL de tu sitio web
-    title: 'Heyscar Romero | Desarrollador Web',
-    description: 'Desarrollador web de páginas y aplicaciones web empresariales...',
-    images: [
-      {
-        url: '/imgs/logo-gradient.png', 
-        width: 1200,
-        height: 630,
-        alt: 'Heyscar Romero - Desarrollador Web',
-      },
-    ],
-    locale: 'es_ES', // Idioma en que se presenta la página
-    siteName: 'Heyscar Romero',
-  },
 };
 
 export default function RootLayout({
@@ -116,10 +100,43 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <head>
+      <head>
+        <title>Heyscar Romero | Desarrollador Web</title>
+        <meta
+          name="description"
+          content="Desarrollador web de páginas y aplicaciones web empresariales..."
+        />
+        <meta property="og:url" content="https://heyscar.dev" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Heyscar Romero | Desarrollador Web"
+        />
+        <meta
+          property="og:description"
+          content="Desarrollador web de páginas y aplicaciones web empresariales."
+        />
+        <meta
+          property="og:image"
+          content="https://heyscar.dev/imgs/preview-page"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="heyscar.dev" />
+        <meta property="twitter:url" content="https://heyscar.dev" />
+        <meta
+          name="twitter:title"
+          content="Heyscar Romero | Desarrollador Web"
+        />
+        <meta
+          name="twitter:description"
+          content="Desarrollador web de páginas y aplicaciones web empresariales..."
+        />
+        <meta
+          name="twitter:image"
+          content="https://heyscar.dev/imgs/preview-page"
+        />
         {/* Meta tags de Open Graph */}
         <link rel="icon" href="/favicon.ico" /> {/* Favicon */}
-        <title>Heyscar Romero | Desarrollador Web</title>
       </head>
       <body className={`${inter.className} ${titleFont.variable} `}>
         <ToastPlugin />
