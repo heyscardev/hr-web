@@ -47,7 +47,7 @@ export const Presentation = () => {
             ">
               <Image
                 alt="heysca romero profile"
-                src="/imgs/me.png"
+                src="/imgs/me.jpg"
                 width={400}
                 height={400}
                 className=" object-cover aspect-square object-top scale-110  "

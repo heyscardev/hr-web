@@ -10,8 +10,9 @@ export const MyUniverse = ({}: Props) => {
   const { toView } = useScrollToView(containerRef);
   return (
     <div
+    id="my-universe"
       ref={containerRef}
-      className="hr-gradient-background-reverse pt-32 flex flex-col items-center min-h-screen pb-2"
+      className=" pt-32 flex flex-col items-center min-h-screen pb-2"
       
     >
       <SectionTitle

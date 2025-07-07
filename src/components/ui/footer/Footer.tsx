@@ -7,7 +7,7 @@ import { SocialButtons } from "../ContacButtons/SocialButtons";
 
 export const Footer = () => {
   return (
-    <footer className=" snap-end  w-full text-gray-700 bg-gray-100 body-font">
+    <footer className=" snap-end z-10 w-full text-gray-700 bg-gray-100 body-font">
       <div className="container flex flex-col md:justify-center flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
         <div className="flex-shrink-0  w-64 md:w-auto mx-auto text-center md:mx-0 md:text-left">
           <a className="flex items-center  w-full justify-center font-medium title-font md:justify-start font-hr-title text-primary-500 text-2xl">

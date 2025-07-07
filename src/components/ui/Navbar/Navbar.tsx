@@ -16,8 +16,8 @@ const routes: Route[] = [
   { href: "/#descubre", title: "Quien Soy" },
   { href: "/#skills", title: "Yo desarrollo" },
   { href: "/#tecnologias", title: "Tecnologías" },
-  { href: "/mi-universo", title: "Mi Universo"},
-  { href: "/contacto", title: "Contactame", scroll: true },
+  { href: "/#my-universe", title: "Mi Universo"},
+  { href: "/#contact", title: "Contactame", scroll: true },
 ];
 export const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
