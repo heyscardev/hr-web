@@ -10,7 +10,7 @@ import { ContactForm } from "../(withAstronaut)/contacto/ui/ContactForm";
 
 export default function IndexPage() {
   return (
-    <div className="z-10">
+    <div className="z-10 overflow-x-hidden">
       <Presentation />
       <div className=" relative bg-gradient-to-br from-orange-200 -z-10 via-primary-100  to-orange-300 overflow-hidden">
         <Image
@@ -30,7 +30,7 @@ export default function IndexPage() {
         />
         <WhoAm />
           {/* <MyUniverse /> */}
-      <div className="z-10">
+      <div className="z-10 w-full overflow-hidden">
       <MyUniverse />
     
     </div>
@@ -68,7 +68,7 @@ export default function IndexPage() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mx-5 lg:mx-0">
+            <div className="w-full overflow-hidden lg:w-1/2 xl:w-5/12 px-4 mx-5 lg:mx-0">
               <ContactForm />
             </div>
           </div>

@@ -10,15 +10,14 @@ export const MyUniverse = ({}: Props) => {
   const { toView } = useScrollToView(containerRef);
   return (
     <div
-    id="my-universe"
+      id="my-universe"
       ref={containerRef}
       className=" pt-32 flex flex-col items-center min-h-screen pb-2"
-      
     >
       <SectionTitle
         className="text-center mb-10"
         title="Mi Universo de Tecnologías"
-        subtile="Explora Nuestro Universo de Desarrollo Digital"
+        subtile="Navegá por todas mis skills"
       />
       <LanguagesPlanet onNodeClick={() => toView()} />
     </div>
