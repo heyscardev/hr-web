@@ -10,7 +10,7 @@ import { ContactForm } from "../(withAstronaut)/contacto/ui/ContactForm";
 
 export default function IndexPage() {
   return (
-    <div className="z-10 overflow-x-hidden">
+    <div className="z-10 overflow-hidden">
       <Presentation />
       <div className=" relative bg-gradient-to-br from-orange-200 -z-10 via-primary-100  to-orange-300 overflow-hidden">
         <Image
