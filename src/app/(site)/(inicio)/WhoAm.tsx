@@ -27,15 +27,20 @@ export const WhoAm = () => {
         </p>
       </div>
       <div className=" lg:w-6/12  xl:w-5/12  py-10 sm:py-20 md:my-0 pl-10">
-        <div className=" bg-slate-300 rounded-lg backdrop-blur-lg shadow-xl bg-opacity-60 border border-secondary-900/10">
-          <Image
-            className="w-full rounded-lg relative  shadow-black/20 shadow-md -translate-x-3   sm:-translate-x-7 -translate-y-4 sm:-translate-y-10 z-20"
-            src="/imgs/teslo-shop.png"
-            width={800}
-            height={500}
-            alt="tailus shop"
-          />
-        </div>
+        <a href="https://www.gemadanceok.com">
+          <div className="  backdrop-blur-lg shadow-2xl  border border-gray-300 bg-gray-200 rounded-2xl ">
+            <div className="relative w-full h-full  -translate-x-3  sm:-translate-x-7 -translate-y-4 sm:-translate-y-10">
+              <div className="absolute top-0 left-0 w-full h-full bg-black/10 rounded-2xl z-10"></div>
+              <Image
+                className="w-full rounded-2xl relative     "
+                src="/imgs/gema-carrusel.png"
+                width={800}
+                height={500}
+                alt="Gema dance ok"
+              />
+            </div>
+          </div>
+        </a>
       </div>
 
       {/* <div className="col-start-8 col-span-2">
